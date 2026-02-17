@@ -1,69 +1,101 @@
-/* Responsive Design for WaterPaid Landing Page */
+/* High-Fidelity Responsive Design for WaterPaid */
 
-/* Tablets (Max 1024px) */
+:root {
+    --mobile-padding: 24px;
+}
+
+/* Tablets & Small Laptops (Max 1024px) */
 @media (max-width: 1024px) {
+    .container {
+        padding: 0 var(--mobile-padding);
+    }
 
     .hero .container,
-    .app-showcase .container {
+    .showcase-content {
         flex-direction: column;
         text-align: center;
         gap: 60px;
     }
 
     .hero-text h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
-    .showcase-text h2 {
-        font-size: 2.5rem;
+    .showcase-text {
+        order: 2;
+    }
+
+    .mockup-wrapper {
+        order: 1;
     }
 
     .bento-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
+        gap: 16px;
     }
 
     .bento-item.lg {
         grid-column: span 2;
-        height: 400px;
+        min-height: 350px;
     }
 }
 
-/* Tablets & Mobile (Max 768px) */
+/* Tablets (Max 768px) */
 @media (max-width: 768px) {
     nav .container {
-        padding: 0 20px;
+        justify-content: center;
     }
 
     .nav-links {
         display: none;
-        /* simple mobile nav for now */
     }
 
     .hero-text h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-btns {
+        justify-content: center;
     }
 
     .tech-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .showcase-content {
-        flex-direction: column;
-        gap: 40px;
+    .showcase-text h2 {
+        font-size: 2.2rem;
     }
 
-    .footer-content {
+    footer .footer-content {
         flex-direction: column;
-        gap: 30px;
+        gap: 32px;
         text-align: center;
     }
 }
 
 /* Mobile (Max 480px) */
 @media (max-width: 480px) {
+    :root {
+        --mobile-padding: 20px;
+    }
+
+    /* Disable Tilt on Mobile for razor sharp text (prevents transform-induced blur) */
+    .tilt-card {
+        transform: none !important;
+        transition: none !important;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
     .hero-text h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+        line-height: 1.1;
     }
 
     .hero-btns {
@@ -83,21 +115,75 @@
     .bento-item.lg,
     .bento-item.md,
     .bento-item.sm {
-        grid-column: span 1;
-        height: auto;
-        min-height: 200px;
+        grid-column: span 1 !important;
+        min-height: 220px;
+        padding: 24px;
+        /* More breathing room */
+    }
+
+    /* Force razor sharp white text on small screens */
+    .bento-item.lg h3,
+    .bento-item.lg p {
+        color: #ffffff !important;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+        font-weight: 600 !important;
+        opacity: 1 !important;
+    }
+
+    .bento-item.lg p {
+        font-weight: 400 !important;
+        line-height: 1.4;
+    }
+
+    .bento-meter-img {
+        width: 150%;
+        right: -50px;
+        bottom: -40px;
     }
 
     .phone-frame {
-        width: 280px;
-        height: 560px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 9/18;
     }
 
     .mock-viewport {
-        padding-bottom: 75px;
+        padding-bottom: 70px;
     }
 
     .mode-switcher {
-        transform: scale(0.9);
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .mode-btn {
+        flex: 1;
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+
+    .showcase-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .download-section {
+        width: 100%;
+    }
+
+    .btn-download {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .phone-frame {
+        max-width: 260px;
     }
 }

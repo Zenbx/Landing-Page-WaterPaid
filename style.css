@@ -52,6 +52,10 @@ body {
     animation: float 6s ease-in-out infinite;
 }
 
+#main-meter-img {
+    opacity: 0.15 !important;
+}
+
 .bento-meter-img {
     position: absolute;
     width: 130%;
@@ -62,8 +66,7 @@ body {
     filter: drop-shadow(0 0 40px var(--accent-glow));
     mask-image: linear-gradient(to top right, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to top right, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-    opacity: 0.25;
-    /* Even more subtle as requested */
+    /* opacity moved to ID selector for maximum priority */
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
