@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterPaid - The Future of Smart Water Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="snakes-container" class="pipes-bg"></div>
+
+    <nav class="glass">
+        <div class="logo">
+            <img src="playstore.png" alt="WaterPaid Logo" class="brand-logo">
+            <span>WaterPaid</span>
+        </div>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tech">Technology</a></li>
+            <li><a href="#app">The App</a></li>
+        </ul>
+        <button class="btn-primary">Try Now</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content float-anim">
+            <h1 class="gradient-text">Fluidity in every drop, precision in every byte.</h1>
+            <p>Experience the next generation of smart water management with WaterPaid. IoT-driven, prepaid, and
+                perfectly transparent.</p>
+            <div class="hero-btns">
+                <button class="btn-primary">Get Started</button>
+                <button class="btn-secondary">Watch Demo</button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </header>
+
+    <section id="features" class="bento-container">
+        <div class="bento-grid">
+            <!-- Large Cell: IoT Meter hardware -->
+            <div class="bento-item lg glass reveal tilt-card">
+                <div class="shine"></div>
+                <div class="bento-info">
+                    <h3>Smart IoT Meters</h3>
+                    <p>Real-time monitoring using advanced LoRaWAN technology. Ultra-long battery life, precision
+                        accuracy.</p>
+                </div>
+                <div class="bento-visual">
+                    <div class="meter-image-wrapper">
+                        <img src="smart-meter.png" alt="WaterPaid Smart Meter" class="bento-meter-img">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Medium Cell: Mobile Recharge -->
+            <div class="bento-item md glass reveal tilt-card">
+                <div class="shine"></div>
+                <div class="bento-info">
+                    <h3>Instant Recharge</h3>
+                    <p>Top up your water credit via Mobile Money in seconds.</p>
+                </div>
+                <div class="bento-visual center">
+                    <i data-lucide="banknote" class="feature-icon success-glow"></i>
+                </div>
+            </div>
+
+            <!-- Medium Cell: Stats -->
+            <div class="bento-item md glass reveal tilt-card">
+                <div class="shine"></div>
+                <div class="bento-info">
+                    <h3>Real-time Stats</h3>
+                    <p>Track every drop. Visualize consumption patterns.</p>
+                </div>
+                <div class="bento-visual center">
+                    <i data-lucide="bar-chart-3" class="feature-icon accent-glow"></i>
+                </div>
+            </div>
+
+            <!-- Small Cell: Security -->
+            <div class="bento-item sm glass reveal tilt-card">
+                <div class="shine"></div>
+                <i data-lucide="shield-check" class="sm-icon green"></i>
+                <span>Bank-grade Security</span>
+            </div>
+
+            <!-- Small Cell: LoRaWAN -->
+            <div class="bento-item sm glass reveal tilt-card">
+                <div class="shine"></div>
+                <i data-lucide="radio" class="sm-icon blue"></i>
+                <span>LoRaWAN Native</span>
+            </div>
+
+            <!-- Small Cell: Leak Detection -->
+            <div class="bento-item sm glass reveal tilt-card">
+                <div class="shine"></div>
+                <i data-lucide="alert-triangle" class="sm-icon orange"></i>
+                <span>Leak Alerts</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="tech-showcase">
+        <div class="container">
+            <h2 class="gradient-text center">High-End Technology Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-card glass reveal">
+                    <div class="tech-icon"><i data-lucide="radio"></i></div>
+                    <h3>LoRaWAN Connectivity</h3>
+                    <p>Low-power, long-range wireless protocol designed for IoT. Penetrates walls and reaches up to 15km
+                        in open areas.</p>
+                </div>
+                <div class="tech-card glass reveal">
+                    <div class="tech-icon"><i data-lucide="server"></i></div>
+                    <h3>FastAPI Backend</h3>
+                    <p>High-performance, modern Python web framework. Handles thousands of concurrent connections with
+                        sub-millisecond latency.</p>
+                </div>
+                <div class="tech-card glass reveal">
+                    <div class="tech-icon"><i data-lucide="smartphone"></i></div>
+                    <h3>Flutter Mobile</h3>
+                    <p>Native-performance mobile application providing a smooth, high-fidelity experience on both iOS
+                        and Android devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="app" class="app-showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <div class="showcase-text">
+                    <h2 id="showcase-title" class="gradient-text">Your Dashboard, Anywhere.</h2>
+                    <p id="showcase-desc">Available on iOS and Android. Manage your meters, track history, and get
+                        notified in real-time.</p>
+                    <div class="download-section">
+                        <a href="waterpaid.apk" download class="btn-download interactable"
+                            style="text-decoration: none;">
+                            <i data-lucide="download"></i>
+                            <div class="download-text">
+                                <span class="small">Download App</span>
+                                <span class="version">Version 2.4.0 (Latest)</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mockup-wrapper">
+                    <!-- Mode switcher placed ABOVE the phone mockup within the wrapper -->
+                    <div class="mode-switcher glass float-anim">
+                        <button class="mode-btn active" data-mode="user">User App</button>
+                        <button class="mode-btn" data-mode="admin">Admin Portal</button>
+                        <div class="mode-slider"></div>
+                    </div>
+
+                    <div class="phone-mockup">
+                        <div class="phone-frame glass">
+                            <div class="phone-screen user-mode" id="phone-screen">
+                                <div class="mock-viewport">
+                                    <!-- USER SCREENS -->
+                                    <div class="mock-screen active" data-screen="home" id="user-home">
+                                        <div class="mock-ui">
+                                            <div class="mock-header">
+                                                <div class="welcome"><span class="small">Good Morning</span><span
+                                                        class="name">John Doe</span></div>
+                                                <i data-lucide="bell" class="icon-sm"></i>
+                                            </div>
+
+                                            <div class="mock-tank-card">
+                                                <h3>Main Residence Tank</h3>
+                                                <div class="tank-row">
+                                                    <div class="water-bottle">
+                                                        <div class="glass-shine"></div>
+                                                        <div class="water-fill" style="height: 65%;">
+                                                            <div class="wave"></div>
+                                                            <div class="wave wave-back"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tank-stats">
+                                                        <span class="label">Available Volume</span>
+                                                        <span class="volume">542.8 L</span>
+                                                        <span class="credit">Credit: 2,500 FCFA</span>
+                                                        <div class="valve-badge open">Valve: OPEN</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mock-stats-row">
+                                                <div class="stat-mini interactable">
+                                                    <div class="stat-icon blue"><i data-lucide="trending-up"></i></div>
+                                                    <div class="stat-val">
+                                                        <small>Total Spent</small>
+                                                        <strong>15,000 XAF</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="stat-mini interactable">
+                                                    <div class="stat-icon green"><i data-lucide="activity"></i></div>
+                                                    <div class="stat-val">
+                                                        <small>Active Meters</small>
+                                                        <strong>1</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- FABs -->
+                                            <div class="mock-fabs">
+                                                <button class="fab sm interactable"><i data-lucide="plus"></i></button>
+                                                <button class="fab lg interactable"><i
+                                                        data-lucide="droplets"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mock-screen" data-screen="history" id="user-history">
+                                        <div class="mock-ui">
+                                            <div class="mock-header">
+                                                <h3>History</h3>
+                                            </div>
+                                            <div class="mock-list">
+                                                <div class="list-item interactable">
+                                                    <div class="item-icon success"><i
+                                                            data-lucide="arrow-down-circle"></i>
+                                                    </div>
+                                                    <div class="item-info"><span>Top-up Success</span><small>Today,
+                                                            10:42
+                                                            AM</small></div>
+                                                    <div class="item-price">+5,000</div>
+                                                </div>
+                                                <div class="list-item interactable">
+                                                    <div class="item-icon"><i data-lucide="droplet"></i></div>
+                                                    <div class="item-info"><span>Consumption</span><small>Yesterday,
+                                                            06:15
+                                                            PM</small></div>
+                                                    <div class="item-price">-12.4 L</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mock-screen" data-screen="profile" id="user-profile">
+                                        <div class="mock-ui">
+                                            <div class="mock-header">
+                                                <h3>Account</h3>
+                                            </div>
+                                            <div class="profile-header">
+                                                <div class="avatar-stack">
+                                                    <div class="profile-avatar"><i data-lucide="user"></i></div>
+                                                    <button class="edit-btn interactable"><i
+                                                            data-lucide="pencil"></i></button>
+                                                </div>
+                                                <p class="profile-name">John Doe</p>
+                                                <p class="profile-phone">+237 6xx xxx xxx</p>
+                                            </div>
+                                            <div class="settings-list">
+                                                <div class="setting-item interactable">
+                                                    <div class="setting-icon"><i data-lucide="shield"></i></div>
+                                                    <div class="setting-info"><span>Privacy & Security</span><small>2FA:
+                                                            ENABLED</small></div>
+                                                    <i data-lucide="chevron-right" class="chevron"></i>
+                                                </div>
+                                                <div class="setting-item interactable">
+                                                    <div class="setting-icon"><i data-lucide="bell"></i></div>
+                                                    <div class="setting-info"><span>Notifications</span><small>Smart
+                                                            Alerts:
+                                                            ON</small></div>
+                                                    <div class="mock-switch active"></div>
+                                                </div>
+                                                <div class="setting-item interactable">
+                                                    <div class="setting-icon"><i data-lucide="help-circle"></i></div>
+                                                    <div class="setting-info"><span>Help & Support</span></div>
+                                                    <i data-lucide="chevron-right" class="chevron"></i>
+                                                </div>
+                                                <div class="setting-item interactable logout">
+                                                    <div class="setting-icon"><i data-lucide="log-out"></i></div>
+                                                    <div class="setting-info"><span>Sign Out</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ADMIN SCREENS -->
+                                    <div class="mock-screen" data-screen="home" id="admin-home">
+                                        <div class="mock-ui admin-portal">
+                                            <div class="mock-app-bar">
+                                                <h1>Admin Dashboard</h1>
+                                                <button class="app-bar-btn"><i data-lucide="rotate-cw"></i></button>
+                                            </div>
+                                            <div class="admin-scroll-content">
+                                                <div class="stats-grid">
+                                                    <div class="stat-card">
+                                                        <i data-lucide="banknote" class="green"></i>
+                                                        <span class="label">Total Revenue</span>
+                                                        <span class="value">1,250k FCFA</span>
+                                                    </div>
+                                                    <div class="stat-card">
+                                                        <i data-lucide="droplet" class="blue"></i>
+                                                        <span class="label">Water (L)</span>
+                                                        <span class="value">45,842 L</span>
+                                                    </div>
+                                                    <div class="stat-card">
+                                                        <i data-lucide="gauge" class="orange"></i>
+                                                        <span class="label">Active Meters</span>
+                                                        <span class="value">842</span>
+                                                    </div>
+                                                    <div class="stat-card">
+                                                        <i data-lucide="users" class="navy"></i>
+                                                        <span class="label">Total Users</span>
+                                                        <span class="value">1,120</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="admin-section-title">Recent Meters Activity</div>
+                                                <div class="summary-list">
+                                                    <div class="summary-item">
+                                                        <div class="item-icon-box green"><i data-lucide="gauge"></i>
+                                                        </div>
+                                                        <div class="item-details">
+                                                            <strong>Serial: WP-8492</strong>
+                                                            <small>Linked to User</small>
+                                                        </div>
+                                                        <div class="item-badge success">ACTIVE</div>
+                                                    </div>
+                                                    <div class="summary-item">
+                                                        <div class="item-icon-box grey"><i data-lucide="gauge"></i>
+                                                        </div>
+                                                        <div class="item-details">
+                                                            <strong>Serial: WP-9012</strong>
+                                                            <small>Unlinked</small>
+                                                        </div>
+                                                        <div class="item-badge">INACTIVE</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="admin-section-title">Recent Users</div>
+                                                <div class="summary-list">
+                                                    <div class="summary-item">
+                                                        <div class="user-circle">JD</div>
+                                                        <div class="item-details">
+                                                            <strong>John Doe</strong>
+                                                            <small>+237 6xx xxx xxx</small>
+                                                        </div>
+                                                        <i data-lucide="chevron-right" class="chevron"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mock-screen" data-screen="meters" id="admin-meters">
+                                        <div class="mock-ui admin-portal">
+                                            <div class="mock-app-bar">
+                                                <h1>Meters Management</h1>
+                                                <button class="app-bar-btn"><i data-lucide="rotate-cw"></i></button>
+                                            </div>
+                                            <div class="admin-scroll-content">
+                                                <div class="admin-search-box">
+                                                    <i data-lucide="search"></i>
+                                                    <input type="text" placeholder="Search by Serial or Device ID">
+                                                </div>
+
+                                                <div class="large-card-list">
+                                                    <div class="meter-large-card">
+                                                        <div class="card-top">
+                                                            <div class="icon-wrap"><i data-lucide="gauge"></i></div>
+                                                            <div class="title-wrap">
+                                                                <strong>Serial ID: WP-8492</strong>
+                                                                <small>Device: DEV-4412</small>
+                                                            </div>
+                                                            <div class="item-badge success">ACTIVE</div>
+                                                        </div>
+                                                        <div class="divider"></div>
+                                                        <div class="card-bottom">
+                                                            <div class="info-pill"><i data-lucide="user"></i>
+                                                                <span>Assigned</span>
+                                                            </div>
+                                                            <div class="info-pill"><i data-lucide="calendar"></i>
+                                                                <span>Oct 12, 2025</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="fab admin-fab"><i data-lucide="plus"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="mock-screen" data-screen="users" id="admin-users">
+                                        <div class="mock-ui admin-portal">
+                                            <div class="mock-app-bar">
+                                                <h1>Users Management</h1>
+                                                <button class="app-bar-btn"><i data-lucide="rotate-cw"></i></button>
+                                            </div>
+                                            <div class="admin-scroll-content">
+                                                <div class="admin-search-box">
+                                                    <i data-lucide="search"></i>
+                                                    <input type="text" placeholder="Search by Pseudo or Phone">
+                                                </div>
+                                                <div class="summary-list">
+                                                    <div class="summary-item">
+                                                        <div class="user-circle">JD</div>
+                                                        <div class="item-details">
+                                                            <strong>John Doe</strong>
+                                                            <small>+237 6xx xxx xxx</small>
+                                                        </div>
+                                                        <i data-lucide="chevron-right" class="chevron"></i>
+                                                    </div>
+                                                    <div class="summary-item">
+                                                        <div class="user-circle orange">AS</div>
+                                                        <div class="item-details">
+                                                            <strong>Alice Smith</strong>
+                                                            <small>+237 6xx xxx xxx</small>
+                                                        </div>
+                                                        <i data-lucide="chevron-right" class="chevron"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mock-screen" data-screen="profile" id="admin-profile">
+                                        <div class="mock-ui admin-portal">
+                                            <div class="mock-app-bar">
+                                                <h1>Admin Account</h1>
+                                            </div>
+                                            <div class="admin-scroll-content">
+                                                <!-- Profile Header -->
+                                                <div class="admin-profile-header">
+                                                    <div class="admin-avatar-stack">
+                                                        <div class="admin-circle-avatar">AD</div>
+                                                        <button class="admin-edit-badge"><i
+                                                                data-lucide="pencil"></i></button>
+                                                    </div>
+                                                    <h2 class="admin-name">Super Admin</h2>
+                                                    <span class="admin-role">Administrator</span>
+                                                </div>
+
+                                                <!-- Management Section -->
+                                                <div class="admin-menu-section">
+                                                    <div class="admin-menu-title">MANAGEMENT</div>
+                                                    <div class="admin-menu-item">
+                                                        <div class="menu-icon-wrap"><i data-lucide="file-text"></i>
+                                                        </div>
+                                                        <div class="menu-info">
+                                                            <strong>Reports & Logs</strong>
+                                                            <small>View system activity</small>
+                                                        </div>
+                                                        <i data-lucide="chevron-right" class="chevron"></i>
+                                                    </div>
+                                                    <div class="admin-menu-item">
+                                                        <div class="menu-icon-wrap"><i data-lucide="sliders"></i></div>
+                                                        <div class="menu-info">
+                                                            <strong>System Settings</strong>
+                                                            <small>Configure parameters</small>
+                                                        </div>
+                                                        <i data-lucide="chevron-right" class="chevron"></i>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Preferences Section -->
+                                                <div class="admin-menu-section">
+                                                    <div class="admin-menu-title">PREFERENCES</div>
+                                                    <div class="admin-menu-item">
+                                                        <div class="menu-icon-wrap"><i data-lucide="settings"></i></div>
+                                                        <div class="menu-info">
+                                                            <strong>Account Settings</strong>
+                                                            <small>Theme: DARK</small>
+                                                        </div>
+                                                        <i data-lucide="chevron-right" class="chevron"></i>
+                                                    </div>
+                                                    <div class="admin-menu-item">
+                                                        <div class="menu-icon-wrap"><i data-lucide="bell"></i></div>
+                                                        <div class="menu-info">
+                                                            <strong>Notifications</strong>
+                                                            <small>Admin alerts</small>
+                                                        </div>
+                                                        <div class="mock-switch active"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="admin-menu-item logout-item">
+                                                    <div class="menu-icon-wrap danger"><i data-lucide="log-out"></i>
+                                                    </div>
+                                                    <div class="menu-info">
+                                                        <strong>Logout</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- mock-viewport end -->
+
+                                <!-- Common Bottom Nav shared by both modes in the mock-ui -->
+                                <div class="mock-bottom-nav">
+                                    <button class="nav-item active interactable" data-target="home">
+                                        <div class="nav-icon-wrapper"><i data-lucide="home"></i></div>
+                                        <span>Home</span>
+                                    </button>
+                                    <button class="nav-item user-only interactable" data-target="history">
+                                        <div class="nav-icon-wrapper"><i data-lucide="history"></i></div>
+                                        <span>History</span>
+                                    </button>
+                                    <button class="nav-item admin-only interactable" data-target="meters"
+                                        style="display:none;">
+                                        <div class="nav-icon-wrapper"><i data-lucide="gauge"></i></div>
+                                        <span>Meters</span>
+                                    </button>
+                                    <button class="nav-item admin-only interactable" data-target="users"
+                                        style="display:none;">
+                                        <div class="nav-icon-wrapper"><i data-lucide="users"></i></div>
+                                        <span>Users</span>
+                                    </button>
+                                    <button class="nav-item interactable" data-target="profile">
+                                        <div class="nav-icon-wrapper"><i data-lucide="user"></i></div>
+                                        <span>Account</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- mockup-wrapper end -->
+            </div> <!-- showcase-content end -->
+        </div> <!-- container end -->
+
+        <!-- DIALOG OVERLAY (Sibling to content, inside section) -->
+        <div class="mock-dialog-overlay" id="edit-profile-dialog">
+            <div class="mock-dialog">
+                <div class="dialog-icon"><i data-lucide="user-cog"></i></div>
+                <h3>Edit Profile</h3>
+                <p>Update your information</p>
+                <div class="mock-input-group">
+                    <label>Pseudo</label>
+                    <input type="text" id="edit-pseudo" value="John Doe">
+                </div>
+                <div class="mock-input-group">
+                    <label>Phone</label>
+                    <input type="text" id="edit-phone" value="+237 6xx xxx xxx">
+                </div>
+                <div class="mock-dialog-actions">
+                    <button class="text-btn" id="cancel-edit">Cancel</button>
+                    <button class="filled-btn" id="save-edit">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="playstore.png" alt="WaterPaid Logo" class="brand-logo-sm">
+                <span>WaterPaid</span>
+            </div>
+            <p>&copy; 2026 WaterPaid Technologies. Revolutionizing utility management.</p>
+            <div class="socials">
+                <i data-lucide="twitter"></i>
+                <i data-lucide="linkedin"></i>
+                <i data-lucide="github"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

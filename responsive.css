@@ -1,0 +1,103 @@
+/* Responsive Design for WaterPaid Landing Page */
+
+/* Tablets (Max 1024px) */
+@media (max-width: 1024px) {
+
+    .hero .container,
+    .app-showcase .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .showcase-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .bento-item.lg {
+        grid-column: span 2;
+        height: 400px;
+    }
+}
+
+/* Tablets & Mobile (Max 768px) */
+@media (max-width: 768px) {
+    nav .container {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+        /* simple mobile nav for now */
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+/* Mobile (Max 480px) */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-item.lg,
+    .bento-item.md,
+    .bento-item.sm {
+        grid-column: span 1;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .phone-frame {
+        width: 280px;
+        height: 560px;
+    }
+
+    .mock-viewport {
+        padding-bottom: 75px;
+    }
+
+    .mode-switcher {
+        transform: scale(0.9);
+    }
+}
