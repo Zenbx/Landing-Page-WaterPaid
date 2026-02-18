@@ -214,8 +214,11 @@
 
                                             <!-- FABs -->
                                             <div class="mock-fabs">
-                                                <button class="fab sm interactable"><i data-lucide="plus"></i></button>
-                                                <button class="fab lg interactable"><i
+                                                <button class="fab sm interactable" data-info-title="Link Meter"
+                                                    data-info-desc="Scan the QR code on your smart meter to link it to your account in seconds."><i
+                                                        data-lucide="plus"></i></button>
+                                                <button class="fab lg interactable" data-info-title="Recharge Credit"
+                                                    data-info-desc="Easily top-up your water credit via Orange Money, MTN MoMo, or Card."><i
                                                         data-lucide="droplets"></i></button>
                                             </div>
                                         </div>
@@ -369,7 +372,9 @@
                                                 </div>
 
                                                 <div class="large-card-list">
-                                                    <div class="meter-large-card">
+                                                    <div class="meter-large-card interactable"
+                                                        data-info-title="Meter Details"
+                                                        data-info-desc="View real-time pressure, battery status, and precise consumption logs for this unit.">
                                                         <div class="card-top">
                                                             <div class="icon-wrap"><i data-lucide="gauge"></i></div>
                                                             <div class="title-wrap">
@@ -397,7 +402,7 @@
                                     <div class="mock-screen" data-screen="users" id="admin-users">
                                         <div class="mock-ui admin-portal">
                                             <div class="mock-app-bar">
-                                                <h1>Users Management</h1>
+                                                <h1>Users Directory</h1>
                                                 <button class="app-bar-btn"><i data-lucide="rotate-cw"></i></button>
                                             </div>
                                             <div class="admin-scroll-content">
@@ -525,10 +530,12 @@
                                     </button>
                                 </div>
                             </div>
+                            <div id="bubble-container"></div>
                         </div>
                     </div>
-                </div> <!-- mockup-wrapper end -->
-            </div> <!-- showcase-content end -->
+                </div>
+            </div> <!-- mockup-wrapper end -->
+        </div> <!-- showcase-content end -->
         </div> <!-- container end -->
 
         <!-- DIALOG OVERLAY (Sibling to content, inside section) -->

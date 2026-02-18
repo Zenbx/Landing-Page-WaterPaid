@@ -222,6 +222,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Info Bubble Logic (Out-of-bounds)
+    const bubbleContainer = document.getElementById('bubble-container');
+    const bubble = document.createElement('div');
+    bubble.className = 'info-bubble';
+    bubble.innerHTML = `<h4></h4><p></p>`;
+    bubbleContainer.appendChild(bubble);
+
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('[data-info-title]');
+        if (trigger) {
+            e.stopPropagation();
+            const title = trigger.getAttribute('data-info-title');
+            const desc = trigger.getAttribute('data-info-desc');
+
+            bubble.querySelector('h4').textContent = title;
+            bubble.querySelector('p').textContent = desc;
+
+            const rect = trigger.getBoundingClientRect();
+            const mockupRect = document.querySelector('.phone-mockup').getBoundingClientRect();
+
+            // Position relative to mockup container to allow protrusion
+            const x = rect.left - mockupRect.left;
+            const y = rect.top - mockupRect.top;
+
+            // Offset bubble to show above the element and potentially protrude
+            bubble.style.left = `${x - 100 + rect.width / 2}px`;
+            bubble.style.top = `${y - 120}px`;
+
+            bubble.classList.add('active');
+        } else if (!e.target.closest('.info-bubble')) {
+            bubble.classList.remove('active');
+        }
+    });
+
     // Hero Parallax
     const heroContent = document.querySelector('.hero-content');
     window.addEventListener('mousemove', (e) => {
